@@ -1,0 +1,31 @@
+name: n8n
+title: n8n
+icon: n8n
+
+services:
+- name: n8n
+  title: n8n
+  service: n8n
+  required: true
+  main: true
+  links:
+  - name: postgres
+    service: postgres
+  - name: sendmail
+    service: opensmtpd
+
+# n8n's database: workflows, credentials, executions and users.
+- name: postgres
+  title: PostgreSQL
+  service: postgres
+  required: true
+  volumes:
+  - name: data
+    size: 10
+
+# n8n sends user invitations and password resets by email. The owner account
+# comes from the n8n service's settings, so n8n works without it.
+- name: opensmtpd
+  title: OpenSMTPD
+  service: opensmtpd
+  disabled: true
