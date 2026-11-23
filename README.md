@@ -11,6 +11,7 @@ composition.
 
 - [n8n stack on Wodby](https://wodby.com/stacks/n8n)
 - [Browse Wodby application stacks](https://wodby.com/stacks)
+- [n8n stack guide](https://wodby.com/docs/2.0/stacks/catalog/n8n/)
 - [Wodby stack documentation](https://wodby.com/docs/2.0/stacks/)
 - [Stack manifest reference](https://wodby.com/docs/2.0/stacks/template/)
 
